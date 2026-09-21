@@ -3,3 +3,10 @@
 # azure-monitor-opentelemetry
 
 azure-functions
+
+# El modelo se carga con joblib y se le pasa un DataFrame de pandas.
+# scikit-learn va fijado a la version con la que se entreno model_fb_marketplace.pkl:
+# cargar el pickle con otra version no esta garantizado y puede fallar al predecir.
+pandas==2.2.2
+scikit-learn==1.9.1
+joblib==1.4.2
